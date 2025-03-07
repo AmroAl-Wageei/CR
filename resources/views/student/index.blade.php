@@ -9,6 +9,7 @@
             <th>Name</th>  
             <th>Number</th>  
             <th>Email</th>  
+            <th>Action</th>  
         </tr>
     </thead>
     <tbody>
@@ -19,7 +20,14 @@
                 <td>{{ $student->name }}</td>
                 <td>{{ $student->number }}</td>
                 <td>{{ $student->email }}</td>
+                <td>
+                    <a href="{{ route('students.edit' , $student->id ) }}">Edit</a> 
+                </td>
             </tr> 
+
+
+
+
         @endforeach 
     </tbody>
 </table>

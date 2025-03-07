@@ -27,7 +27,7 @@ Route::get('/', function () {
 // # DB_DATABASE=your_database_name
 
 //#2
-// Create Route , Controller , Model and Migration
+// Create Route , Controller , Model , View and Migration
 // # php artisan make:model student -mcr
 
 //#3
@@ -36,7 +36,7 @@ Route::get('/', function () {
 // # $table->id();
 // # $table->string('name');
 // # $table->string('email');
-// # $table->string('phone');
+// # $table->string('number');
 // # $table->timestamps();
 // # });
 // After defining the schema, run the migration:
