@@ -22,6 +22,11 @@
                 <td>{{ $student->email }}</td>
                 <td>
                     <a href="{{ route('students.edit' , $student->id ) }}">Edit</a> 
+                    <form action="{{ route('students.destroy', $student->id) }}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit">Delete</button>
+                    </form>
                 </td>
             </tr> 
 
